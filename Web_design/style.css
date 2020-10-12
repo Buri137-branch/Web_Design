@@ -1,0 +1,15 @@
+body{
+    max-width: 1600px;
+    margin: 0 auto;
+    min-height: 100%;
+}
+
+header {
+    padding-top: 20px;
+}
+.logo {
+    right: 0px;
+    top: 0px;
+    width: 200px;
+    height: 100px;
+}
