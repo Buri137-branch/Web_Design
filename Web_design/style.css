@@ -1,0 +1,12 @@
+body{
+    max-width: 1600px;
+    margin: 0 auto;
+    min-height: 100%;
+}
+.kosik {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 100px;
+    right: 350px;
+}
