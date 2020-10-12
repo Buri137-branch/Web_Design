@@ -16,7 +16,14 @@
         <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </expand>
-    <select />
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:origin/main" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1c273c7d-6a9a-44fe-a825-405a9339256c" name="Default Changelist" comment="" />
@@ -38,6 +45,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GithubDefaultAccount">
+    <option name="defaultAccountId" value="a88d5636-88af-4365-b157-85a41e4cf2e7" />
   </component>
   <component name="ProjectId" id="1in87fHOcLMOg1Xty6JdHb4rt52" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -75,7 +85,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -87,14 +109,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="714" y="344" key="#Notifications/0.0.1920.1040@0.0.1920.1040" timestamp="1602531980101" />
-    <state x="1192" y="291" key="FileChooserDialogImpl" timestamp="1602537794304">
+    <state x="1192" y="291" key="FileChooserDialogImpl" timestamp="1602543547178">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1223" y="302" key="FileChooserDialogImpl/-1855.0.1471.864/81.0.1839.1080@81.0.1839.1080" timestamp="1602533710411" />
-    <state x="1192" y="291" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1602537794304" />
-    <state x="0" y="165" key="SettingsEditor" timestamp="1602538325850">
+    <state x="1192" y="291" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1602543547178" />
+    <state x="0" y="165" width="1638" height="710" key="SettingsEditor" timestamp="1602543763333">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="0" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1602538325850" />
+    <state x="0" y="165" width="1638" height="710" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1602543763333" />
   </component>
 </project>
