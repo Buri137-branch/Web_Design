@@ -26,6 +26,7 @@
     </select>
   </component>
   <component name="ChangeListManager">
+<<<<<<< Updated upstream
     <list default="true" id="1c273c7d-6a9a-44fe-a825-405a9339256c" name="Default Changelist" comment="nic">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Images/2020-10-13 00_35_43-Window.png" beforeDir="false" />
@@ -33,6 +34,9 @@
       <change beforePath="$PROJECT_DIR$/e-shop.html" beforeDir="false" afterPath="$PROJECT_DIR$/e-shop.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
     </list>
+=======
+    <list default="true" id="1c273c7d-6a9a-44fe-a825-405a9339256c" name="Default Changelist" comment="nic" />
+>>>>>>> Stashed changes
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -95,7 +99,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602544189259</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="nic">
+      <created>1602549292101</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1602549292101</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -134,6 +145,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="714" y="344" key="#Notifications/0.0.1920.1040@0.0.1920.1040" timestamp="1602531980101" />
+    <state x="115" y="61" width="1736" height="856" key="DiffContextDialog" timestamp="1602549622705">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="115" y="61" width="1736" height="856" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1602549622705" />
     <state x="1192" y="291" key="FileChooserDialogImpl" timestamp="1602544747574">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
