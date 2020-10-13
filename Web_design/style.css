@@ -7,7 +7,7 @@ body{
 main{
     position: relative;
     display: grid;
-    grid-template-columns: 30% auto;
+    grid-template-columns: 20% auto;
     grid-auto-rows: max-content;
     padding-top: 20px;
     min-height: 100%;
@@ -23,37 +23,48 @@ main{
 }
 
 .menu{
-    position: relative;
     margin: 20px;
-    background-color: #fd90001f;
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
     height: 100%;
     grid-area: menu;
-    align-items: center;
 }
 
 .menu span{
-    position: relative;
-    font-size: 30px;
-    user-select: none;
-    background-color: coral;
+    font-size: 35px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    display: block;
     text-align: center;
-    line-height: 150px;
+    margin: auto;
+    background-color: #fddc009c;
 }
 
-nav a{
-    padding: 0 .5rem;
-    line-height: 2rem;
-    color: black;
-    display: inline-block;
+.menu nav{
+    background-color: #bfbfbf1c;
+
+}
+
+.menu nav a{
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     text-decoration: none;
-    font-family: Arial, Verdana, sans-serif;
+    font-size: 25px;
+    color: black;
+    display: block;
+}
+
+.menu nav a:hover{
+    /*color: coral;*/
+    background-color: coral;
 }
 
 .products{
 
     height: 800px;
     grid-area: prod;
-
 }
 
 header {
@@ -62,7 +73,6 @@ header {
     grid-template-columns: 380px auto 20%;
     padding-top: 20px;
     grid-template-areas:"logo hledat kosik";
-
 
 }
 
@@ -86,7 +96,6 @@ header {
     margin: auto;
     border: none;
     font-size: 50px;
-    bottom: 0px;
     grid-area: hledat;
     justify-content: center;
 }
