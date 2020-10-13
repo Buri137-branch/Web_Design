@@ -4,6 +4,47 @@ body{
     min-height: 100%;
 }
 
+main{
+    position: relative;
+    display: grid;
+    grid-template-columns: 30% auto;
+    grid-auto-rows: max-content;
+    padding-top: 20px;
+    min-height: 100%;
+    grid-template-areas:
+            "ban ban"
+            "menu prod";
+}
+
+.banner{
+    width: 1600px;
+    height: 350px;
+    grid-area: ban;
+}
+
+.menu{
+    margin: 20px;
+    background-color: #fd9000a6;
+    padding: 0 0.5rem;
+    height: 800px;
+    grid-area: menu;
+}
+
+nav a{
+    padding: 0 .5rem;
+    line-height: 2rem;
+    color: black;
+    display: inline-block;
+    text-decoration: none;
+    font-family: Arial, Verdana, sans-serif;
+}
+
+.products{
+
+    height: 800px;
+    grid-area: prod;
+}
+
 header {
     position: relative;
     display: grid;
