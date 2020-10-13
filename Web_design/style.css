@@ -23,11 +23,21 @@ main{
 }
 
 .menu{
+    position: relative;
     margin: 20px;
-    background-color: #fd9000a6;
-    padding: 0 0.5rem;
-    height: 800px;
+    background-color: #fd90001f;
+    height: 100%;
     grid-area: menu;
+    align-items: center;
+}
+
+.menu span{
+    position: relative;
+    font-size: 30px;
+    user-select: none;
+    background-color: coral;
+    text-align: center;
+    line-height: 150px;
 }
 
 nav a{
@@ -43,6 +53,7 @@ nav a{
 
     height: 800px;
     grid-area: prod;
+
 }
 
 header {
