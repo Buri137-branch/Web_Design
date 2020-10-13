@@ -4,69 +4,6 @@ body{
     min-height: 100%;
 }
 
-main{
-    position: relative;
-    display: grid;
-    grid-template-columns: 20% auto;
-    grid-auto-rows: max-content;
-    padding-top: 20px;
-    min-height: 100%;
-    grid-template-areas:
-            "ban ban"
-            "menu prod";
-}
-
-.banner{
-    width: 1600px;
-    height: 350px;
-    grid-area: ban;
-}
-
-.menu{
-    margin: 20px;
-    border-style: solid;
-    border-width: 2px;
-    border-color: black;
-    height: 100%;
-    grid-area: menu;
-}
-
-.menu span{
-    font-size: 35px;
-    padding-bottom: 10px;
-    padding-top: 10px;
-    display: block;
-    text-align: center;
-    margin: auto;
-    background-color: #fddc009c;
-}
-
-.menu nav{
-    background-color: #bfbfbf1c;
-
-}
-
-.menu nav a{
-    padding-left: 20px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    text-decoration: none;
-    font-size: 25px;
-    color: black;
-    display: block;
-}
-
-.menu nav a:hover{
-    /*color: coral;*/
-    background-color: coral;
-}
-
-.products{
-
-    height: 800px;
-    grid-area: prod;
-}
-
 header {
     position: relative;
     display: grid;
@@ -99,25 +36,90 @@ header {
     grid-area: hledat;
     justify-content: center;
 }
-.searchtext  {
 
 
-}
-
-.product_item {
-    display: inline-grid;
-}
-.product_list {
+main{
+    position: relative;
     display: grid;
-    grid-column-gap: 60px;
-    grid-template-columns: auto auto auto;
-    padding: 20px;
+    grid-template-columns: 20% auto;
+    grid-auto-rows: max-content;
+    padding-top: 20px;
+    min-height: 100%;
+    grid-template-areas:
+            "ban ban"
+            "menu prod";
 }
 
-.grid-item {
-    border: 20px solid rgba(0, 0, 0, 0.8);
-    grid-auto-rows: max-content;
-    padding: 20px;
-    font-size: 30px;
+.banner{
+    width: 1600px;
+    height: 350px;
+    grid-area: ban;
+}
+
+.menu{
+    margin: 20px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+    height: 500px;
+    grid-area: menu;
+}
+
+.menu span{
+    font-size: 35px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    display: block;
     text-align: center;
+    margin: auto;
+    background-color: #fddc009c;
+}
+
+.menu nav{
+    background-color: #bfbfbf1c;
+    height: 442px;
+
+}
+
+.menu nav a{
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+    display: block;
+}
+
+.menu nav a:hover{
+    /*color: coral;*/
+    background-color: coral;
+}
+
+.products{
+    
+    margin: 20px;
+    height: 100%;
+    grid-area: prod;
+}
+
+.product_item{
+    /*position: relative;*/
+    display: grid;
+    grid-template-rows: 200px 50px 25px 25px;
+    height: 500px;
+    width: 150px;
+    grid-template-areas:
+            "img"
+            "pridat"
+            "label"
+            "cena";
+}
+.product_item figure img{
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+    width: 300px;
+    height: 200px;
+    grid-area: img;
 }
