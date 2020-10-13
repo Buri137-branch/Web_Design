@@ -69,3 +69,17 @@ header {
     grid-area: kosik;
     bottom: 0;
 }
+
+.hledat {
+    /*position: relative;*/
+    margin: auto;
+    border: none;
+    font-size: 50px;
+    bottom: 0px;
+    grid-area: hledat;
+    justify-content: center;
+}
+.searchtext  {
+
+
+}
