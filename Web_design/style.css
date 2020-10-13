@@ -5,20 +5,26 @@ body{
 }
 
 header {
+    position: relative;
+    display: grid;
+    grid-template-columns: 380px auto 20%;
     padding-top: 20px;
+    grid-template-areas:"logo hledat kosik";
+
+
 }
 
 .logo {
-    right: 0;
-    top: 0;
-    width: 200px;
-    height: 100px;
+    width: 380px;
+    height: 180px;
+    grid-area: logo;
 }
 
 .kosik {
-    width: 30px;
-    height: 30px;
     position: absolute;
-    top: 100px;
-    right: 350px;
+    right: 0;
+    width: 50px;
+    height: 50px;
+    grid-area: kosik;
+    bottom: 0;
 }
