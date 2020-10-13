@@ -103,23 +103,45 @@ main{
     grid-area: prod;
 }
 
+.product_list {
+    /*display: grid;*/
+    /*grid-column-gap: 60px;*/
+    /*grid-template-columns: auto auto auto;*/
+    /*padding: 0px;*/
+
+}
+
 .product_item{
     /*position: relative;*/
-    display: grid;
-    grid-template-rows: 200px 50px 25px 25px;
-    height: 500px;
-    width: 150px;
-    grid-template-areas:
-            "img"
-            "pridat"
-            "label"
-            "cena";
+    /*display: grid;*/
+    /*grid-template-rows: 200px 50px 25px 25px;*/
+    /*height: 500px;*/
+    /*width: 150px;*/
+    /*grid-template-areas:*/
+    /*        "img"*/
+    /*        "pridat"*/
+    /*        "label"*/
+    /*        "cena";*/
+    /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);*/
+    position: absolute;
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
 }
 .product_item figure img{
-    border-style: solid;
-    border-width: 2px;
-    border-color: black;
-    width: 300px;
-    height: 200px;
-    grid-area: img;
+    /*border-style: solid;*/
+    /*border-width: 2px;*/
+    /*border-color: black;*/
+    /*width: 300px;*/
+    /*height: 200px;*/
+    /*grid-area: img;*/
 }
+/*//////////////////////*/
+/*.product_item {*/
+/*    display: inline-grid;*/
+/*}*/
+
