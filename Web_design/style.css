@@ -83,3 +83,21 @@ header {
 
 
 }
+
+.product_item {
+    display: inline-grid;
+}
+.product_list {
+    display: grid;
+    grid-column-gap: 60px;
+    grid-template-columns: auto auto auto;
+    padding: 20px;
+}
+
+.grid-item {
+    border: 20px solid rgba(0, 0, 0, 0.8);
+    grid-auto-rows: max-content;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
