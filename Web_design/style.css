@@ -1,147 +1,170 @@
 body{
-    max-width: 1600px;
+    max-width: 1200px;
     margin: 0 auto;
     min-height: 100%;
 }
 
-header {
-    position: relative;
-    display: grid;
-    grid-template-columns: 380px auto 20%;
-    padding-top: 20px;
-    grid-template-areas:"logo hledat kosik";
+
+.navigation a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 20px;
+    color: black;
 
 }
 
-.logo {
-    width: 380px;
-    height: 180px;
-    grid-area: logo;
+.navigation a:hover{
+    background-color: coral;
 }
 
-.kosik {
-    position: absolute;
-    right: 0;
-    width: 50px;
-    height: 50px;
-    grid-area: kosik;
-    bottom: 0;
-}
+
+/*.kosik {*/
+/*    position: absolute;*/
+/*    right: 0;*/
+/*    width: 50px;*/
+/*    height: 50px;*/
+/*    grid-area: kosik;*/
+/*    bottom: 0;*/
+/*}*/
 
 .hledat {
-    /*position: relative;*/
+    position: absolute;
     margin: auto;
     border: none;
     font-size: 50px;
     grid-area: hledat;
-    justify-content: center;
+    padding-left: 50px;
+    padding-top: 20px;
+    /*justify-content: center;*/
 }
 
 
 main{
     position: relative;
     display: grid;
-    grid-template-columns: 20% auto;
-    grid-auto-rows: max-content;
-    padding-top: 20px;
+    /*grid-auto-rows: max-content;*/
+    /*padding-top: 20px;*/
     min-height: 100%;
     grid-template-areas:
-            "ban ban"
-            "menu prod";
+            'ban'
+            'prod';
 }
 
 .banner{
-    width: 1600px;
-    height: 350px;
+    width: 1200px;
+    height: 250px;
     grid-area: ban;
 }
 
-.menu{
-    margin: 20px;
-    border-style: solid;
-    border-width: 2px;
-    border-color: black;
-    height: 500px;
-    grid-area: menu;
-}
-
-.menu span{
-    font-size: 35px;
-    padding-bottom: 10px;
-    padding-top: 10px;
-    display: block;
-    text-align: center;
-    margin: auto;
-    background-color: #fddc009c;
-}
-
-.menu nav{
-    background-color: #bfbfbf1c;
-    height: 442px;
-
-}
-
-.menu nav a{
-    padding-left: 20px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    text-decoration: none;
-    font-size: 25px;
-    color: black;
-    display: block;
-}
-
-.menu nav a:hover{
-    /*color: coral;*/
-    background-color: coral;
-}
-
 .products{
-    
+    display: grid;
     margin: 20px;
     height: 100%;
     grid-area: prod;
-}
-
-.product_list {
-    /*display: grid;*/
-    /*grid-column-gap: 60px;*/
-    /*grid-template-columns: auto auto auto;*/
-    /*padding: 0px;*/
+    grid-template-columns: repeat( auto-fit, minmax(260px, 1fr) );;
 
 }
+
 
 .product_item{
-    /*position: relative;*/
-    /*display: grid;*/
-    /*grid-template-rows: 200px 50px 25px 25px;*/
-    /*height: 500px;*/
-    /*width: 150px;*/
-    /*grid-template-areas:*/
-    /*        "img"*/
-    /*        "pridat"*/
-    /*        "label"*/
-    /*        "cena";*/
-    /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);*/
-    position: absolute;
     border-style: solid;
     border-color: black;
     border-width: 2px;
-    max-width: 300px;
-    margin: auto;
+    max-width: 260px;
+    margin: 20px;
     text-align: center;
-    font-family: arial;
-}
-.product_item figure img{
-    /*border-style: solid;*/
-    /*border-width: 2px;*/
-    /*border-color: black;*/
-    /*width: 300px;*/
-    /*height: 200px;*/
-    /*grid-area: img;*/
-}
-/*//////////////////////*/
-/*.product_item {*/
-/*    display: inline-grid;*/
-/*}*/
+    /*font-family: arial;*/
 
+}
+
+.proImg1 {
+    max-width: 246px;
+    height: 270px;
+}
+
+/*// Small screens*/
+@media only screen and (max-width: 768px) {
+    body {
+        /*margin: 0 auto;*/
+        /*min-height: 100%;*/
+        background-color: aquamarine;
+    }
+
+    header {
+
+        max-width: 100%;
+        /*max-height: 100px;*/
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-areas:'nav logo hledat';
+
+    }
+
+    .logo {
+        position: relative;
+        margin: auto;
+        /*width: 400px;*/
+        max-width: 100%;
+        grid-area: logo;
+        max-height: 100px;
+
+
+    }
+
+    .navigation {
+        display: none;
+        grid-area: nav;
+        /*display: grid;*/
+        grid-template-columns: 1fr 1fr 1fr;
+        background-color: #de5047;
+        height: 55px;
+        padding: 0;
+    }
+    .hledat {
+        display: none;
+        /*position: absolute;*/
+        /*margin: auto;*/
+        /*border: none;*/
+        /*font-size: 50px;*/
+        grid-area: hledat;
+        /*padding-left: 50px;*/
+        /*padding-top: 20px;*/
+        /*justify-content: center;*/
+    }
+
+    main{
+        display: none;
+    }
+
+}
+@media only screen and (min-width: 770px) {
+
+    body {
+        max-width: 1200px;
+        background-color: chartreuse;
+    }
+
+    header {
+        position: relative;
+        display: grid;
+        grid-template-columns: 380px;
+        padding-top: 20px;
+        grid-template-areas:'logo hledat'
+                        'logo navigation';
+
+    }
+
+    .navigation {
+        width: 820px;
+        grid-area: navigation;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        background-color: #de5047;
+        height: 55px;
+        padding: 0;
+    }
+
+}
