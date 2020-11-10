@@ -2,6 +2,9 @@ body{
     max-width: 1200px;
     margin: 0 auto;
     min-height: 100%;
+    background-color: #FAF8FF;
+
+
 }
 
 .navigation a{
@@ -14,20 +17,13 @@ body{
     color: black;
 }
 
-.navigation a:hover{
+.navigation .aktualni{
     background-color: coral;
 }
 
-/*.kosik {*/
-/*    position: absolute;*/
-/*    right: 0;*/
-/*    width: 50px;*/
-/*    height: 50px;*/
-/*    grid-area: kosik;*/
-/*    bottom: 0;*/
-/*}*/
-
-
+.navigation a:hover{
+    background-color: coral;
+}
 
 
 main{
@@ -47,31 +43,7 @@ main{
     grid-area: ban;
 }
 
-.products{
-    display: grid;
-    margin: 20px;
-    height: 100%;
-    grid-area: prod;
-    grid-template-columns: repeat( auto-fit, minmax(260px, 1fr) );;
 
-}
-
-
-.product_item{
-    border-style: solid;
-    border-color: black;
-    border-width: 2px;
-    max-width: 260px;
-    margin: 20px;
-    text-align: center;
-    /*font-family: arial;*/
-
-}
-
-.proImg1 {
-    max-width: 246px;
-    height: 270px;
-}
 
 /*// Small screens*/
 @media only screen and (max-width: 768px) {
@@ -85,6 +57,7 @@ main{
 
         display: grid;
         grid-template-rows: auto auto;
+        background-color: #0083EA;
         grid-template-areas:'logo'
                     'nav';
 
@@ -111,7 +84,7 @@ main{
         display: grid;
         grid-template-columns: auto auto auto;
         background-color: #de5047;
-        height: 55px;
+        height: 40px;
         padding: 0;
     }
 
@@ -121,6 +94,7 @@ main{
 
     .navigation a{
         display: flex;
+        background-color: #FFBD4F;
         justify-content: center;
         align-items: center;
         text-decoration: none;
@@ -142,7 +116,39 @@ main{
     }
 
     main{
+        /*position: relative;*/
+        /*display: grid;*/
+        background-color: #0099D5;
+    }
+
+    .banner{
         display: none;
+    }
+
+    .products{
+        display: grid;
+        margin: 20px;
+        height: 100%;
+        grid-area: prod;
+        grid-template-columns: repeat( auto-fit, minmax(260px, 1fr) );;
+
+    }
+
+
+    .product_item{
+        border-style: solid;
+        border-color: black;
+        border-width: 2px;
+        max-width: 260px;
+        margin: 20px;
+        text-align: center;
+        /*font-family: arial;*/
+
+    }
+
+    .proImg1 {
+        max-width: 236px;
+        height: 270px;
     }
 
 }
@@ -150,7 +156,7 @@ main{
 
     body {
         max-width: 1200px;
-        background-color: chartreuse;
+        /*background-color: #0099D5;*/
     }
 
     header {
@@ -158,6 +164,7 @@ main{
         display: grid;
         grid-template-columns: 380px;
         padding-top: 20px;
+        background-color: #0083EA;
         grid-template-areas:'logo hledat'
                         'logo navigation';
 
@@ -170,21 +177,23 @@ main{
     }
     nav{
         grid-area: navigation;
+        padding-top: 20px;
+
     }
     .navigation {
         width: 820px;
         grid-area: navigation;
         display: grid;
         grid-template-columns: auto auto auto;
-        background-color: #de5047;
-        height: 55px;
+        background-color: black;
+        grid-gap: 2px;
+        height: 35px;
         padding: 0;
     }
-    /*nav ul li{*/
-    /*    display: inline-block;*/
-    /*}*/
+
     .navigation a{
         display: flex;
+        background-color: #FFBD4F;
         justify-content: center;
         align-items: center;
         text-decoration: none;
@@ -192,20 +201,52 @@ main{
         font-size: 20px;
         color: black;
     }
-
-    .hledat {
-        /*position: absolute;*/
-        margin: auto;
-        border: none;
-        font-size: 50px;
-        grid-area: hledat;
-        padding-left: 50px;
-        padding-top: 20px;
-        /*justify-content: center;*/
+    .navigation a:hover{
+        background-color: coral;
     }
 
     .logo {
         max-width: 380px;
         grid-area: logo;
     }
+
+    main{
+        position: relative;
+        display: grid;
+        /*grid-auto-rows: max-content;*/
+        /*padding-top: 20px;*/
+        min-height: 100%;
+        background-color: #0099D5;
+        grid-template-areas:
+            'ban'
+            'prod';
+    }
+
+    .products{
+        display: grid;
+        margin: 20px;
+        height: 100%;
+        grid-area: prod;
+        grid-template-columns: repeat( auto-fit, minmax(260px, 1fr) );;
+
+    }
+
+
+    .product_item{
+        border-style: solid;
+        border-color: black;
+        border-width: 2px;
+        max-width: 260px;
+        margin: 20px;
+        text-align: center;
+        /*font-family: arial;*/
+
+    }
+
+    .proImg1 {
+        max-width: 246px;
+        height: 270px;
+    }
+
+
 }
