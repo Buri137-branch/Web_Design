@@ -5,20 +5,8 @@ body{
 }
 
 
-.navigation a{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    font-weight: bolder;
-    font-size: 20px;
-    color: black;
 
-}
 
-.navigation a:hover{
-    background-color: coral;
-}
 
 
 /*.kosik {*/
@@ -109,7 +97,7 @@ main{
         margin: auto;
     }
 
-    .navigation {
+    nav {
         display: none;
         grid-area: nav;
         /*display: grid;*/
@@ -153,6 +141,14 @@ main{
 
     }
 
+    .toggle, [id=drop]{
+        display: none;
+
+
+    }
+    nav{
+        grid-area: navigation;
+    }
     .navigation {
         width: 820px;
         grid-area: navigation;
@@ -161,6 +157,21 @@ main{
         background-color: #de5047;
         height: 55px;
         padding: 0;
+    }
+    /*nav ul li{*/
+    /*    display: inline-block;*/
+    /*}*/
+    .navigation a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        font-weight: bolder;
+        font-size: 20px;
+        color: black;
+    }
+    .navigation a:hover{
+        background-color: coral;
     }
 
     .logo {
