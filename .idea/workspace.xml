@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+<<<<<<< HEAD
   <component name="ChangeListManager">
     <list default="true" id="fc536588-de78-4175-a208-e58aada25f82" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -38,4 +39,9 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+=======
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+>>>>>>> 41a36991c617b9c3b4e9383046657ab00f432bb4
 </project>
