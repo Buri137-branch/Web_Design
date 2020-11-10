@@ -4,10 +4,19 @@ body{
     min-height: 100%;
 }
 
+.navigation a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 20px;
+    color: black;
+}
 
-
-
-
+.navigation a:hover{
+    background-color: coral;
+}
 
 /*.kosik {*/
 /*    position: absolute;*/
@@ -18,16 +27,7 @@ body{
 /*    bottom: 0;*/
 /*}*/
 
-.hledat {
-    position: absolute;
-    margin: auto;
-    border: none;
-    font-size: 50px;
-    grid-area: hledat;
-    padding-left: 50px;
-    padding-top: 20px;
-    /*justify-content: center;*/
-}
+
 
 
 main{
@@ -84,8 +84,9 @@ main{
     header {
 
         display: grid;
-        grid-template-columns: 25% 50% 25%;
-        grid-template-areas:'nav logo hledat';
+        grid-template-rows: auto auto;
+        grid-template-areas:'logo'
+                    'nav';
 
     }
 
@@ -97,14 +98,35 @@ main{
         margin: auto;
     }
 
-    nav {
+    .toggle, [id=drop]{
         display: none;
+    }
+
+    nav{
         grid-area: nav;
-        /*display: grid;*/
-        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .navigation {
+        width: 100%;
+        grid-area: nav;
+        display: grid;
+        grid-template-columns: auto auto auto;
         background-color: #de5047;
         height: 55px;
         padding: 0;
+    }
+
+    /*nav ul li{*/
+    /*    display: inline-block;*/
+    /*}*/
+
+    .navigation a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        font-weight: bolder;
+        font-size: 20px;
+        color: black;
     }
 
     .hledat {
@@ -170,8 +192,16 @@ main{
         font-size: 20px;
         color: black;
     }
-    .navigation a:hover{
-        background-color: coral;
+
+    .hledat {
+        /*position: absolute;*/
+        margin: auto;
+        border: none;
+        font-size: 50px;
+        grid-area: hledat;
+        padding-left: 50px;
+        padding-top: 20px;
+        /*justify-content: center;*/
     }
 
     .logo {
