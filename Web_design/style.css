@@ -167,4 +167,7 @@ main{
         padding: 0;
     }
 
+    .logo {
+        max-width: 380px;
+        grid-area: logo;
 }
