@@ -17,9 +17,7 @@ body{
     color: black;
 }
 
-.navigation .aktualni{
-    background-color: coral;
-}
+
 
 .navigation a:hover{
     background-color: coral;
@@ -32,18 +30,31 @@ main{
     /*grid-auto-rows: max-content;*/
     /*padding-top: 20px;*/
     min-height: 100%;
+    background-color: ghostwhite;
+
     grid-template-areas:
             'ban'
             'prod';
 }
 
 .banner{
-    width: 1200px;
-    height: 250px;
-    grid-area: ban;
+    min-width: 100%;
+    max-width:100%;
+    grid-area: auto;
+    height:auto;
 }
-
-
+footer{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    background-color: #FFBD4F;
+    color: black;
+    padding: 10px;
+}
+.cont_list{
+    padding:20px;
+    list-style-type:none;
+}
 
 /*// Small screens*/
 @media only screen and (max-width: 768px) {
@@ -57,7 +68,7 @@ main{
 
         display: grid;
         grid-template-rows: auto auto;
-        background-color: #0083EA;
+        background-color: snow;
         grid-template-areas:'logo'
                     'nav';
 
@@ -83,9 +94,10 @@ main{
         grid-area: nav;
         display: grid;
         grid-template-columns: auto auto auto;
-        background-color: #de5047;
+        background-color: snow;
         height: 40px;
         padding: 0;
+
     }
 
     /*nav ul li{*/
@@ -103,7 +115,7 @@ main{
         color: black;
     }
 
-    .hledat {
+    .search {
         display: none;
         /*position: absolute;*/
         /*margin: auto;*/
@@ -118,7 +130,7 @@ main{
     main{
         /*position: relative;*/
         /*display: grid;*/
-        background-color: #0099D5;
+        background-color: ghostwhite;
     }
 
     .banner{
@@ -164,10 +176,10 @@ main{
         display: grid;
         grid-template-columns: 380px;
         padding-top: 20px;
-        background-color: #0083EA;
+
         grid-template-areas:'logo hledat'
                         'logo navigation';
-        background-color: #E88982;
+        background-color: whitesmoke;
 
     }
 
@@ -182,7 +194,7 @@ main{
 
     }
     .navigation {
-        width: 820px;
+        width: 100%;
         grid-area: navigation;
         display: grid;
         grid-template-columns: auto auto auto;
@@ -191,6 +203,7 @@ main{
         height: 35px;
         padding: 0;
     }
+
 
     .navigation a{
         display: flex;
@@ -203,7 +216,7 @@ main{
         color: black;
     }
     .navigation a:hover{
-        background-color: coral;
+        background-color: whitesmoke;
     }
 
     .logo {
@@ -217,7 +230,7 @@ main{
         /*grid-auto-rows: max-content;*/
         /*padding-top: 20px;*/
         min-height: 100%;
-        background-color: #0099D5;
+
         grid-template-areas:
             'ban'
             'prod';
