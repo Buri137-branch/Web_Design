@@ -53,6 +53,7 @@ main{
     height: 100%;
     grid-area: prod;
     grid-template-columns: repeat( auto-fit, minmax(260px, 1fr) );;
+    /*background-color: #6E6D64;;*/
 
 }
 
@@ -64,6 +65,7 @@ main{
     max-width: 260px;
     margin: 20px;
     text-align: center;
+
     /*font-family: arial;*/
 
 }
@@ -78,7 +80,7 @@ main{
     body {
         /*margin: 0 auto;*/
         /*min-height: 100%;*/
-        background-color: #F5F5EF;
+        background-color: #F6FBF9;
     }
 
     header {
@@ -86,6 +88,7 @@ main{
         display: grid;
         grid-template-columns: 25% 50% 25%;
         grid-template-areas:'nav logo hledat';
+        background-color: #E88982;
 
     }
 
@@ -128,7 +131,7 @@ main{
 
     body {
         max-width: 1200px;
-        background-color: chartreuse;
+        background-color: #FFFFFF;
     }
 
     header {
@@ -138,6 +141,7 @@ main{
         padding-top: 20px;
         grid-template-areas:'logo hledat'
                         'logo navigation';
+        background-color: #E88982;
 
     }
 
@@ -154,7 +158,7 @@ main{
         grid-area: navigation;
         display: grid;
         grid-template-columns: auto auto auto;
-        background-color: #de5047;
+        background-color: #F2A67F;
         height: 55px;
         padding: 0;
     }
@@ -171,7 +175,7 @@ main{
         color: black;
     }
     .navigation a:hover{
-        background-color: coral;
+        background-color: #F2A67F;
     }
 
     .logo {
