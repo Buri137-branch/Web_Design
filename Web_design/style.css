@@ -1,61 +1,3 @@
-body{
-    max-width: 1200px;
-    margin: 0 auto;
-    min-height: 100%;
-    background-color: #FAF8FF;
-
-
-}
-
-.navigation a{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    font-weight: bolder;
-    font-size: 20px;
-    color: black;
-}
-
-
-
-.navigation a:hover{
-    background-color: coral;
-}
-
-
-main{
-    position: relative;
-    display: grid;
-    /*grid-auto-rows: max-content;*/
-    /*padding-top: 20px;*/
-    min-height: 100%;
-    background-color: ghostwhite;
-
-    grid-template-areas:
-            'ban'
-            'prod';
-}
-
-.banner{
-    min-width: 100%;
-    max-width:100%;
-    grid-area: auto;
-    height:auto;
-}
-footer{
-    display: flex;
-    flex-flow: row;
-    justify-content: space-between;
-    background-color: #FFBD4F;
-    color: black;
-    padding: 10px;
-}
-.cont_list{
-    padding:20px;
-    list-style-type:none;
-}
-
 /*// Small screens*/
 @media only screen and (max-width: 768px) {
     body {
@@ -71,7 +13,6 @@ footer{
         background-color: snow;
         grid-template-areas:'logo'
                     'nav';
-
     }
 
     .logo {
@@ -100,10 +41,6 @@ footer{
 
     }
 
-    /*nav ul li{*/
-    /*    display: inline-block;*/
-    /*}*/
-
     .navigation a{
         display: flex;
         background-color: #FFBD4F;
@@ -115,22 +52,27 @@ footer{
         color: black;
     }
 
+    .navigation a:hover{
+        background-color: coral;
+    }
+
     .search {
         display: none;
-        /*position: absolute;*/
-        /*margin: auto;*/
-        /*border: none;*/
-        /*font-size: 50px;*/
         grid-area: hledat;
-        /*padding-left: 50px;*/
-        /*padding-top: 20px;*/
-        /*justify-content: center;*/
     }
 
     main{
-        /*position: relative;*/
-        /*display: grid;*/
         background-color: ghostwhite;
+        position: relative;
+        display: grid;
+        /*grid-auto-rows: max-content;*/
+        /*padding-top: 20px;*/
+        min-height: 100%;
+
+        grid-template-areas:
+            'ban'
+            'prod';
+
     }
 
     .banner{
@@ -163,11 +105,28 @@ footer{
         height: 270px;
     }
 
+    footer{
+        display: flex;
+        flex-flow: row;
+        justify-content: space-between;
+        background-color: #FFBD4F;
+        color: black;
+        padding: 10px;
+    }
+    .cont_list{
+        padding:20px;
+        list-style-type:none;
+    }
+
+
 }
 @media only screen and (min-width: 770px) {
 
     body {
         max-width: 1200px;
+        margin: 0 auto;
+        min-height: 100%;
+        background-color: #FAF8FF;
         /*background-color: #0099D5;*/
     }
 
@@ -176,7 +135,6 @@ footer{
         display: grid;
         grid-template-columns: 380px;
         padding-top: 20px;
-
         grid-template-areas:'logo hledat'
                         'logo navigation';
         background-color: whitesmoke;
@@ -214,9 +172,10 @@ footer{
         font-weight: bolder;
         font-size: 20px;
         color: black;
+
     }
     .navigation a:hover{
-        background-color: whitesmoke;
+        background-color: coral;
     }
 
     .logo {
@@ -227,13 +186,19 @@ footer{
     main{
         position: relative;
         display: grid;
-        /*grid-auto-rows: max-content;*/
-        /*padding-top: 20px;*/
         min-height: 100%;
-
         grid-template-areas:
             'ban'
             'prod';
+        background-color: ghostwhite;
+
+    }
+
+    .banner{
+        min-width: 100%;
+        max-width:100%;
+        grid-area: auto;
+        height:auto;
     }
 
     .products{
@@ -262,5 +227,18 @@ footer{
         height: 270px;
     }
 
+
+    footer{
+        display: flex;
+        flex-flow: row;
+        justify-content: space-between;
+        background-color: #FFBD4F;
+        color: black;
+        padding: 10px;
+    }
+    .cont_list{
+        padding:20px;
+        list-style-type:none;
+    }
 
 }
