@@ -93,6 +93,7 @@
         border-color: black;
         border-width: 2px;
         max-width: 260px;
+        min-width: 260px;
         margin: 20px;
         text-align: center;
         /*font-family: arial;*/
@@ -215,6 +216,7 @@
         border-color: black;
         border-width: 2px;
         max-width: 260px;
+        min-width: 260px;
         margin: 20px;
         text-align: center;
         /*font-family: arial;*/
