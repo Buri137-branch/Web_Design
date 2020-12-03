@@ -1,5 +1,5 @@
 /*// Small screens*/
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 300px) {
     body {
         margin: 0 auto;
         background-color: #F6FBF9;
@@ -9,9 +9,10 @@
 
         display: grid;
         grid-template-rows: auto auto;
+        grid-template-columns: auto 50px;
         background-color: snow;
-        grid-template-areas:'logo'
-                    'nav';
+        grid-template-areas:'logo sea'
+                    'nav nav';
     }
 
     .logo {
@@ -22,8 +23,24 @@
         margin: auto;
     }
 
-    .toggle, [id=drop]{
-        display: none;
+    .search {
+        grid-area: sea;
+        display: grid;
+        /*grid-template-areas:'openbtn'*/
+
+    }
+
+    .openbtn {
+        display: flex;
+        position: center;
+        width: auto;
+        height: auto;
+        font-size: 20px;
+        cursor: pointer;
+        background-color: #111;
+        color: white;
+        border: none;
+        grid-area: openbtn;
     }
 
     nav{
@@ -59,10 +76,10 @@
         background-color: coral;
     }
 
-    .search {
-        display: none;
-        grid-area: hledat;
-    }
+    /*.search {*/
+    /*    display: none;*/
+    /*    grid-area: hledat;*/
+    /*}*/
 
     main{
         background-color: ghostwhite;
