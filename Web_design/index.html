@@ -7,20 +7,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link href="style.css" type="text/css" rel="stylesheet">
+
+    <script>
+        function openNav() {
+            document.getElementById("mySidepanel").style.width = "100%";
+            document.getElementById("nav").style.display = 'none' ;
+            document.getElementById("open").style.visibility = 'hidden' ;
+        }
+
+        function closeNav() {
+            document.getElementById("mySidepanel").style.width = "0";
+            document.getElementById("nav").style.display = "grid" ;
+            document.getElementById("open").style.visibility = 'visible' ;
+        }
+    </script>
 </head>
 <body>
 <header>
-    <div class="search">
-        <input type="text" placeholder="Hledat..">
 
-        <input type="submit" value="Hledat">
+    <div id="mySidepanel" class="sidepanel">
+
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <input type="text" placeholder="hledat..." ></input>
+
     </div>
+    <button id="open" class="openbtn" onclick="openNav()">☰</button>
+
 
     <img class="logo" alt="Logo" src="Images/logo.png">
     <nav>
         <label for="drop" class="toggle">Menu</label>
         <input type="checkbox" id="drop"/>
-        <div class="navigation">
+        <div id="nav" class="navigation">
             <a href="index.html" class="actual">Nabídka</a>
             <a href="o_nas.html">O nás</a>
             <a href="kosik.html">Košík</a>
