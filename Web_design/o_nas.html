@@ -5,22 +5,26 @@
     <meta charset="UTF-8">
     <title>e-shop</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="style.css" type="text/css" rel="stylesheet">
 </head>
 <body>
 <header>
     <div id="search" class="search_panel">
-        <a href="javascript:void(0)" class="close_search" onclick="closeNav()">×</a>
-        <input type="text" placeholder="hledat..." >
+        <a href="javascript:void(0)" class="close_search" onclick="closeNav()"><i class="fa fa-times"></i></a>
+        <div class="search_box">
+            <input type="text" placeholder="Hledat...">
+            <button class="search_btn_web">F</button>
+        </div>
+
 
     </div>
-    <button id="open" class="open_search" onclick="openNav()">☰</button>
+    <button id="open" class="open_search" onclick="openNav()"><i class="fa fa-search"></i></button>
     <img class="logo" alt="Logo" src="Images/logo.png">
     <nav>
         <div id="nav" class="navigation">
-            <a href="index.html">Nabídka</a>
-            <a href="o_nas.html" class="actual">O nás</a>
+            <a href="index.html" class="actual">Nabídka</a>
+            <a href="o_nas.html">O nás</a>
             <a href="kosik.html">Košík</a>
         </div>
     </nav>
@@ -53,13 +57,13 @@
 <script>
     function openNav() {
         document.getElementById("search").style.width = "100%";
-        document.getElementById("nav").style.display = 'none' ;
+        document.getElementById("nav").style.visibility = 'hidden' ;
         document.getElementById("open").style.visibility = 'hidden' ;
     }
 
     function closeNav() {
         document.getElementById("search").style.width = "0";
-        document.getElementById("nav").style.display = "grid" ;
+        document.getElementById("nav").style.visibility = "visible" ;
         document.getElementById("open").style.visibility = 'visible' ;
     }
 </script>
