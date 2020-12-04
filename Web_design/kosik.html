@@ -10,18 +10,16 @@
 </head>
 <body>
 <header>
-    <div class="search">
-        <input type="text" placeholder="Hledat..">
+    <div id="search" class="search_panel">
+        <a href="javascript:void(0)" class="close_search" onclick="closeNav()">×</a>
+        <input type="text" placeholder="hledat..." >
 
-        <input type="submit" value="Hledat">
     </div>
-
+    <button id="open" class="open_search" onclick="openNav()">☰</button>
     <img class="logo" alt="Logo" src="Images/logo.png">
     <nav>
-        <label for="drop" class="toggle">Menu</label>
-        <input type="checkbox" id="drop"/>
-        <div class="navigation">
-            <a href="index.html" >Nabídka</a>
+        <div id="nav" class="navigation">
+            <a href="index.html">Nabídka</a>
             <a href="o_nas.html">O nás</a>
             <a href="kosik.html" class="actual">Košík</a>
         </div>
@@ -41,5 +39,19 @@
     <p>Ricardo S.R.O.</p>
     <p> Burian Hampapa</p>
 </footer>
+
+<script>
+    function openNav() {
+        document.getElementById("search").style.width = "100%";
+        document.getElementById("nav").style.display = 'none' ;
+        document.getElementById("open").style.visibility = 'hidden' ;
+    }
+
+    function closeNav() {
+        document.getElementById("search").style.width = "0";
+        document.getElementById("nav").style.display = "grid" ;
+        document.getElementById("open").style.visibility = 'visible' ;
+    }
+</script>
 </body>
 </html>
