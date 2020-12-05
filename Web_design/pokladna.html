@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <title>e-shop</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="style.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+<header>
+    <div id="search" class="search_panel">
+        <a href="javascript:void(0)" class="close_search" onclick="closeNav()"><i class="fa fa-times"></i></a>
+        <div class="search_box">
+            <input type="text" placeholder="Hledat...">
+            <button class="search_btn_web">F</button>
+        </div>
+
+
+    </div>
+    <button id="open" class="open_search" onclick="openNav()"><i class="fa fa-search"></i></button>
+    <img class="logo" alt="Logo" src="Images/logo.png">
+    <nav>
+        <div id="nav" class="navigation">
+            <a href="index.html" class="actual">Nabídka</a>
+            <a href="o_nas.html">O nás</a>
+            <a href="kosik.html">Košík</a>
+        </div>
+    </nav>
+</header>
+<main>
+    <div class="banner">
+        <img class="banner" alt="banner" src="Images/banner.png">
+    </div>
+    <div class="row">
+        <div class="col-75">
+            <div class="container">
+                <form action="/action_page.php">
+
+                    <div class="row">
+                        <div class="col-50">
+                            <h3>Adresa doručení</h3>
+                            <label for="fname"><i class="fa fa-user"></i> Jméno a přijmení</label>
+                            <input type="text" id="fname" name="firstname" placeholder="Jan Novák">
+                            <label for="email"><i class="fa fa-envelope"></i> Email</label>
+                            <input type="text" id="email" name="email" placeholder="jannovak@xmail.cz">
+                            <label for="adr"><i class="fa fa-address-card-o"></i> Adresa</label>
+                            <input type="text" id="adr" name="address" placeholder="U plynárny">
+                            <label for="city"><i class="fa fa-institution"></i> Město</label>
+                            <input type="text" id="city" name="city" placeholder="Praha">
+
+                            <div class="row">
+                                <div class="col-50">
+                                    <label for="zip">PSČ</label>
+                                    <input type="text" id="zip" name="zip" placeholder="140 00">
+                                </div>
+                                <div class="col-50">
+                                    <label for="state">Číslo popisné/orientační</label>
+                                    <input type="text" id="state" name="state" placeholder="2926/54">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-50">
+                            <h3>Payment</h3>
+                            <label for="fname">Přijímané karty</label>
+                            <div class="icon-container">
+                                <i class="fa fa-cc-visa" style="color:navy;"></i>
+                                <i class="fa fa-cc-mastercard" style="color:blue;"></i>
+                                <i class="fa fa-cc-amex" style="color:darkgoldenrod;"></i>
+
+                            </div>
+                            <label for="cname">Držitel Karty</label>
+                            <input type="text" id="cname" name="cardname" placeholder="Jan Novák">
+                            <label for="ccnum">Číslo karty</label>
+                            <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+                            <label for="expmonth">Datum expirace MM/YY</label>
+                            <input type="text" id="expmonth" name="expmonth" placeholder="05/20">
+                            <div class="row">
+                                <div class="col-50">
+                                    <label for="cvv">CVV</label>
+                                    <input type="text" id="cvv" name="cvv" placeholder="352">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <label>
+                        <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+                    </label>
+                    <input type="submit" value="Continue to checkout" class="btn">
+                </form>
+            </div>
+        </div>
+        <div class="col-25">
+            <div class="container">
+                <h4>Cart <span class="price" style="color:black"><i class="fa fa-shopping-cart"></i> <b>4</b></span></h4>
+                <p><a href="#">Triko 1</a> <span class="price">250,-</span></p>
+                <p><a href="#">Triko 2</a> <span class="price">400,-</span></p>
+                <p><a href="#">Triko 3</a> <span class="price">300,-</span></p>
+                <hr>
+                <p>Total <span class="price" style="color:black"><b>950,-</b></span></p>
+            </div>
+        </div>
+    </div>
+
+</main>
+<footer>
+    <p>Ricardo S.R.O.</p>
+    <p> Burian Hampapa</p>
+</footer>
+
+<script>
+    function openNav() {
+        document.getElementById("search").style.width = "100%";
+        document.getElementById("nav").style.visibility = 'hidden' ;
+        document.getElementById("open").style.visibility = 'hidden' ;
+    }
+
+    function closeNav() {
+        document.getElementById("search").style.width = "0";
+        document.getElementById("nav").style.visibility = "visible" ;
+        document.getElementById("open").style.visibility = 'visible' ;
+    }
+</script>
+</body>
+</html>

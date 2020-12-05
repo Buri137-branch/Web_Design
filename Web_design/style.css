@@ -1,5 +1,5 @@
 /*// Small screens*/
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 300px) {
     body {
         margin: 0 auto;
         background-color: #F6FBF9;
@@ -179,9 +179,189 @@
         padding:20px;
         list-style-type:none;
     }
+    /*--------------cart items------------*/
+    .cart-page{
+        margin: 80px auto;
+        width:100%;
+    }
+    table{
+        width: 100%;
+        border-collapse: collapse;
 
+    }
+    .cart-info{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    th{
+        text-align: left;
+        padding: 5px;
+        color: #fff;
+        background:#ff523b ;
+        font-weight: normal;
+    }
+    td
+    {
+        padding: 10px 5px;
+    }
+    td input{
+        width: 40px;
+        height: 30px;
+        padding: 5px;
+    }
+    td a{
+        color:#ff523b ;
+        font-size: 12px;
+    }
+    td img{
+        width: 80px;
+        hight: 80px;
+        margin-right: 5px;
 
+    }
+    .total-price{
+        display: flex;
+        justify-content: flex-end;
+    }
+    .total-price table{
+        border-top: 3px solid #ff523b;
+        border-left: 3px solid #ff523b ;
+        width: 100%;
+        max-width: 450px;
+    }
+    td last-child{
+        text-align: right;
+    }
+    th lastchild{
+        text-align: right;
+    }
+/*    -----payment button-------*/
+.payment {
+    background-color: #ddd;
+    border: none;
+    color: black;
+    right: 0;
+    position: marker;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    margin-right: auto;
+    cursor: pointer;
+    border-radius: 16px;
+    margin-bottom: 15px;
+    /*display: flex;*/
+    /*justify-content: flex-end;*/
 }
+    /*------ payment --------*/
+    body {
+        font-family: Arial;
+        font-size: 17px;
+        padding: 8px;
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+
+    .row {
+        display: -ms-flexbox; /* IE10 */
+        display: flex;
+        -ms-flex-wrap: wrap; /* IE10 */
+        flex-wrap: wrap;
+        margin: 0 -16px;
+    }
+
+    .col-25 {
+        -ms-flex: 25%; /* IE10 */
+        flex: 25%;
+    }
+
+    .col-50 {
+        -ms-flex: 50%; /* IE10 */
+        flex: 50%;
+    }
+
+    .col-75 {
+        -ms-flex: 75%; /* IE10 */
+        flex: 75%;
+    }
+
+    .col-25,
+    .col-50,
+    .col-75 {
+        padding: 0 16px;
+    }
+
+    .container {
+        background-color: #f2f2f2;
+        padding: 5px 20px 15px 20px;
+        border: 1px solid lightgrey;
+        border-radius: 3px;
+    }
+
+    input[type=text] {
+        width: 100%;
+        margin-bottom: 20px;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+    }
+
+    label {
+        margin-bottom: 10px;
+        display: block;
+    }
+
+    .icon-container {
+        margin-bottom: 20px;
+        padding: 7px 0;
+        font-size: 24px;
+    }
+
+    .btn {
+        background-color: #4CAF50;
+        color: white;
+        padding: 12px;
+        margin: 10px 0;
+        border: none;
+        width: 100%;
+        border-radius: 3px;
+        cursor: pointer;
+        font-size: 17px;
+    }
+
+    .btn:hover {
+        background-color: #45a049;
+    }
+
+    a {
+        color: #2196F3;
+    }
+
+    hr {
+        border: 1px solid lightgrey;
+    }
+
+    span.price {
+        float: right;
+        color: grey;
+    }
+
+    /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (also change the direction - make the "cart" column go on top) */
+    @media (max-width: 800px) {
+        .row {
+            flex-direction: column-reverse;
+        }
+        .col-25 {
+            margin-bottom: 20px;
+        }
+    }
+
+    }
+
+
+
+
 @media only screen and (min-width: 770px) {
 
     body {
@@ -342,3 +522,4 @@
 .products button:hover {
     opacity: 0.7;
 }
+
