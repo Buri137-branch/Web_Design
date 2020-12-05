@@ -1,5 +1,5 @@
 /*// Small screens*/
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 300px) {
     body {
         margin: 0 auto;
         background-color: #F6FBF9;
@@ -23,9 +23,6 @@
         margin: auto;
     }
 
-    .toggle, [id=drop]{
-        display: none;
-    }
 
     nav{
         grid-area: nav;
@@ -38,7 +35,6 @@
         background-color: snow;
         height: 40px;
         padding: 0;
-        
 
     }
 
@@ -60,7 +56,6 @@
     .navigation .actual{
         background-color: coral;
     }
-
 
     main{
         background-color: ghostwhite;
@@ -114,6 +109,7 @@
         color: white;
         border: none;
         grid-area: sea;
+        padding-bottom: 0;
         padding-left: 5px;
         padding-right: 5px;
         text-decoration: none;
@@ -131,40 +127,85 @@
     .products{
 
         font-family: arial;
-
         display: grid;
         margin: 20px;
         height: 100%;
         align-items: center;
-        /*grid-area: prod;*/
         grid-template-columns: repeat( auto-fit, minmax(270px, 1fr) );;
 
     }
 
     .product_item{
-
+        /*display: block;*/
         background-color: white;
         border-style: solid;
         border-color: black;
         border-width: 2px;
         margin: 20px;
         text-align: center;
+        box-shadow: 6px 6px 5px #aaaaaa;
 
     }
 
-    .proAdd{
-        margin: 0;
-        font-size: 25px;
-        background-color: lightgreen;
+    .product_item:hover{
+        box-shadow: 12px 12px 10px #aaaaaa;
+        margin-left: 10px;
+        margin-right: 10px;
     }
-    .proAdd:hover{
-        background-color: #2b542c;
-    }
+
+    /*.proAdd{*/
+    /*    margin: 0;*/
+    /*    font-size: 25px;*/
+    /*    background-color: lightgreen;*/
+    /*}*/
+    /*.proAdd:hover{*/
+    /*    background-color: #2b542c;*/
+    /*}*/
 
     .proImg{
         position: center;
         max-width: 225px;
         height: 270px;
+    }
+
+    .price {
+        color: grey;
+        font-size: 22px;
+    }
+
+    .products button {
+        border: none;
+        outline: 0;
+        padding: 12px;
+        color: white;
+        background-color: #ff7f27;
+        text-align: center;
+        cursor: pointer;
+        width: 100%;
+        font-size: 18px;
+    }
+
+    .products button:hover {
+        opacity: 0.7;
+    }
+
+    .product_detail{
+        margin: 10px;
+        width: 100%;
+        align-items: center;
+        background-color: white;
+        padding: 10px;
+        display: inline-block;
+    }
+
+    .product_detail .proImg{
+        position: center;
+        width: 100%;
+        height: auto;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        /*margin: auto;*/
     }
 
     footer{
@@ -175,11 +216,10 @@
         color: black;
         padding: 10px;
     }
-    .cont_list{
-        padding:20px;
-        list-style-type:none;
-    }
-
+    /*.cont_list{*/
+    /*    padding:20px;*/
+    /*    list-style-type:none;*/
+    /*}*/
 
 }
 @media only screen and (min-width: 770px) {
@@ -251,7 +291,7 @@
 
     main{
         position: relative;
-        display: grid;
+        /*display: grid;*/
         min-height: 100%;
         grid-template-areas:
             'ban'
@@ -261,48 +301,13 @@
     }
 
     .banner{
+        display: block;
         min-width: 100%;
         max-width:100%;
-        grid-area: auto;
+        /*grid-area: auto;*/
         height:auto;
     }
 
-    .products{
-        display: grid;
-        margin: 20px;
-        height: 100%;
-        align-items: center;
-        /*grid-area: prod;*/
-        grid-template-columns: repeat( auto-fit, minmax(270px, 1fr) );;
-
-    }
-
-    .product_item{
-
-        background-color: white;
-        border-style: solid;
-        border-color: black;
-        border-width: 2px;
-        margin: 20px;
-        text-align: center;
-
-    }
-
-    .proAdd{
-        display: block;
-        margin: 0;
-        font-size: 25px;
-        background-color: lightgreen;
-    }
-    .proAdd:hover{
-        background-color: #2b542c;
-    }
-
-    .proImg {
-        position: center;
-        max-width: 225px;
-        height: 270px;
-    }
 
 
     footer{
@@ -312,33 +317,10 @@
         background-color: #FFBD4F;
         color: black;
         padding: 10px;
+
     }
-    .cont_list{
-        padding:20px;
-        list-style-type:none;
-    }
-
 }
 
 
 
-.price {
-    color: grey;
-    font-size: 22px;
-}
 
-.products button {
-    border: none;
-    outline: 0;
-    padding: 12px;
-    color: white;
-    background-color: limegreen;
-    text-align: center;
-    cursor: pointer;
-    width: 100%;
-    font-size: 18px;
-}
-
-.products button:hover {
-    opacity: 0.7;
-}
