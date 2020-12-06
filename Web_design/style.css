@@ -257,47 +257,68 @@
     }
 
 
-    .cart-page {
-        margin: 80px auto;
-        width: 100%;
+    .cart_page{
+        margin: 10px;
+        padding: 10px;
+
     }
 
-    table {
+    .cart_table {
+        margin: 0 0 40px 0;
         width: 100%;
+        background-color: white;
         border-collapse: collapse;
-
     }
 
-    .cart-info {
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    th {
+    .cart_table th {
         text-align: left;
         padding: 5px;
-        color: #fff;
-        background: #ff523b;
+        background: lightgrey;
         font-weight: normal;
     }
 
-    td {
-        padding: 10px 5px;
+    .cart-info {
+        /*display: inline-flex;*/
+        display: table-cell;
+        /*width: 100%;*/
+        /*flex-wrap: wrap;*/
+        /*float: left;*/
     }
 
-    td input {
-        width: 40px;
-        height: 30px;
+    .cart-info .cart_info_parts{
+        display: inline-flex;
+        font-size: min(max(12px, 4vw), 22px);
+        align-items: center;
+        /*max-font-size: 2px;*/
+    }
+    .cart-info .cart_info_parts p{
+    }
+
+    .cart_table td {
+        padding: 10px 5px;
+        font-size: min(max(12px, 4vw), 22px);
+    }
+
+    .cart_table tr {
+        border-bottom: 5px solid lightgrey;
+        /*border-left: 0;*/
+    }
+
+    .cart_table tr:last-child {
+        border-bottom: 0;
+    }
+
+    .cart_table td input {
+        text-align: center;
+        width: 30px;
+        height: auto;
         padding: 5px;
         box-sizing: border-box;
+        font-size: min(max(14px, 4vw), 20px);
     }
 
-    td a {
-        color: #ff523b;
-        font-size: 12px;
-    }
 
-    td img {
+    .cart_table td img {
         width: 80px;
         height: 80px;
         margin-right: 5px;
@@ -310,19 +331,31 @@
     }
 
     .total-price table {
-        border-top: 3px solid #ff523b;
-        border-left: 3px solid #ff523b;
+        border-collapse: collapse;
+        border-top: 6px solid lightgrey;
+        border-left: 6px solid lightgrey;
+        border-bottom: 6px solid lightgrey;
+        background-color: white;
         width: 100%;
-        max-width: 450px;
+        max-width: 280px;
+        font-size: min(max(7px, 3vw), 12px);
     }
 
+    .total-price .price_label{
+        font-weight: bold;
+        font-size: min(max(15px, 4vw), 22px);
+    }
+    .total-price .price_amount{
+        font-weight: bold;
+        color: #4CAF50;
+        font-size: min(max(17px, 4vw), 24px);
+    }
 
     .payment {
-        background-color: #ddd;
+        background-color: #4CAF50;
         border: none;
-        color: black;
         right: 0;
-        position: marker;
+        /*position: marker;*/
         padding: 10px 20px;
         text-align: center;
         text-decoration: none;
@@ -333,6 +366,17 @@
         margin-bottom: 15px;
         /*display: flex;*/
         /*justify-content: flex-end;*/
+    }
+    .payment a, .payment a:link, .payment a:visited, .payment a:focus, .payment a:hover, .payment a:active{
+        color: black;
+        text-decoration:none;
+        cursor: crosshair;
+
+        display: flex;
+        /*background-color: #FFBD4F;*/
+        justify-content: center;
+        font-weight: bolder;
+        font-size: 20px;
     }
 
 
@@ -409,13 +453,13 @@
         background-color: #45a049;
     }
 
-    a {
-        color: #2196F3;
-    }
+    /*a {*/
+    /*    color: #2196F3;*/
+    /*}*/
 
-    hr {
-        border: 1px solid lightgrey;
-    }
+    /*hr {*/
+    /*    border: 1px solid lightgrey;*/
+    /*}*/
 
     span.price {
         float: right;
@@ -493,6 +537,7 @@
     main{
         position: relative;
         display: grid;
+        min-width: 100%;
         min-height: 100%;
         grid-template-areas:
             'ban'
