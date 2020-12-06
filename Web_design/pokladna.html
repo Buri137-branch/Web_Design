@@ -33,67 +33,40 @@
     <div class="banner">
         <img class="banner" alt="banner" src="Images/banner.png">
     </div>
-    <div class="row">
-        <div class="col-75">
+    <div class="payment_page">
+        <div class="pay_info">
             <div class="container">
-                <form action="/action_page.php">
+                <h3>Platba</h3>
+                <label for="cname">Držitel Karty</label>
+                <input type="text" id="cname" name="cardname">
+                <label for="ccnum">Číslo karty</label>
+                <input type="text" id="ccnum" name="cardnumber">
+                <label for="expmonth">Datum expirace MM/YY</label>
+                <input type="text" id="expmonth" name="expmonth">
+                <label for="cvv">CVV</label>
+                <input type="text" id="cvv" name="cvv">
 
-                    <div class="row">
-                        <div class="col-50">
-                            <h3>Adresa doručení</h3>
-                            <label for="fname"><i class="fa fa-user"></i> Jméno a přijmení</label>
-                            <input type="text" id="fname" name="firstname" placeholder="Jan Novák">
-                            <label for="email"><i class="fa fa-envelope"></i> Email</label>
-                            <input type="text" id="email" name="email" placeholder="jannovak@xmail.cz">
-                            <label for="adr"><i class="fa fa-address-card-o"></i> Adresa</label>
-                            <input type="text" id="adr" name="address" placeholder="U plynárny">
-                            <label for="city"><i class="fa fa-institution"></i> Město</label>
-                            <input type="text" id="city" name="city" placeholder="Praha">
+                <h3>Adresa doručení</h3>
+                <label for="fname"><i class="fa fa-user"></i> Jméno a přijmení</label>
+                <input type="text" id="fname" name="firstname">
+                <label for="email"><i class="fa fa-envelope"></i> Email</label>
+                <input type="text" id="email" name="email">
+                <label for="adr"><i class="fa fa-address-card-o"></i> Adresa</label>
+                <input type="text" id="adr" name="address">
+                <label for="city"><i class="fa fa-institution"></i> Město</label>
+                <input type="text" id="city" name="city">
 
-                            <div class="row">
-                                <div class="col-50">
-                                    <label for="zip">PSČ</label>
-                                    <input type="text" id="zip" name="zip" placeholder="140 00">
-                                </div>
-                                <div class="col-50">
-                                    <label for="state">Číslo popisné/orientační</label>
-                                    <input type="text" id="state" name="state" placeholder="2926/54">
-                                </div>
-                            </div>
-                        </div>
+                <label for="state">Číslo popisné/orientační</label>
+                <input type="text" id="state" name="state">
 
-                        <div class="col-50">
-                            <h3>Payment</h3>
-                            <label for="fname">Přijímané karty</label>
-                            <div class="icon-container">
-                                <i class="fa fa-cc-visa" style="color:navy;"></i>
-                                <i class="fa fa-cc-mastercard" style="color:blue;"></i>
-                                <i class="fa fa-cc-amex" style="color:darkgoldenrod;"></i>
+                <label for="zip">PSČ</label>
+                <input type="text" id="zip" name="zip">
 
-                            </div>
-                            <label for="cname">Držitel Karty</label>
-                            <input type="text" id="cname" name="cardname" placeholder="Jan Novák">
-                            <label for="ccnum">Číslo karty</label>
-                            <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
-                            <label for="expmonth">Datum expirace MM/YY</label>
-                            <input type="text" id="expmonth" name="expmonth" placeholder="05/20">
-                            <div class="row">
-                                <div class="col-50">
-                                    <label for="cvv">CVV</label>
-                                    <input type="text" id="cvv" name="cvv" placeholder="352">
-                                </div>
-                            </div>
-                        </div>
 
-                    </div>
-                    <label>
-                        <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
-                    </label>
-                    <input type="submit" value="Continue to checkout" class="btn">
-                </form>
             </div>
+            <input type="submit" value="Zaplatit" class="btn">
         </div>
-        <div class="col-25">
+        <div class="cart_items">
             <div class="container">
                 <h4>Cart <span class="price" style="color:black"><i class="fa fa-shopping-cart"></i> <b>4</b></span></h4>
                 <p><a href="#">Triko 1</a> <span class="price">250,-</span></p>
@@ -106,10 +79,6 @@
     </div>
 
 </main>
-<footer>
-    <p>Ricardo S.R.O.</p>
-    <p> Burian Hampapa</p>
-</footer>
 
 <script>
     function openNav() {

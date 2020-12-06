@@ -9,7 +9,6 @@
     }
 
     header {
-        /*position: fixed;*/
         top: 0;
         display: grid;
         grid-template-rows: auto auto;
@@ -76,6 +75,7 @@
         overflow-x: hidden;
         transition: 0.5s;
         display: grid;
+        grid-template-columns: auto auto;
         grid-template-areas: 'close free'
                         'box box';
     }
@@ -90,6 +90,7 @@
         transition: 0.3s;
         grid-area: close;
         font-size: 10vw;
+        max-width: 71px;
     }
 
     .search_box {
@@ -97,7 +98,7 @@
 
     }
 
-    .search_box .search_btn_web {
+    .search_panel_web {
         display: none;
     }
 
@@ -213,7 +214,6 @@
 
 
     .product_config .price_container button{
-        /*display: inline;*/
         border: none;
         border-radius: 16px;
         margin-top: 10px;
@@ -230,74 +230,65 @@
         font-weight: bold;
         color: #4CAF50;
     }
-    /*.product_detail .price{*/
-    /*    display: inline;*/
-    /*    color: #ff7f27;*/
-    /*    font-size: 15px;*/
-    /*    !*margin-left: 55%;*!*/
-    /*}*/
 
-    /*.product_config button{*/
-    /*    margin: 10px;*/
-    /*    display: inline;*/
-    /*    float: right;*/
-    /*}*/
+    .cart_page{
+        margin: 10px;
+        padding: 10px;
 
-    footer {
-        /*position: absolute;*/
-        position: relative;
-        width: 100%;
-        bottom: 0;
-        display: flex;
-        flex-flow: row;
-        justify-content: space-between;
-        background-color: #FFBD4F;
-        color: black;
-        /*padding: 10px;*/
     }
 
-
-    .cart-page {
-        margin: 80px auto;
+    .cart_table {
+        margin: 0 0 40px 0;
         width: 100%;
-    }
-
-    table {
-        width: 100%;
+        background-color: white;
         border-collapse: collapse;
-
     }
 
-    .cart-info {
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    th {
+    .cart_table th {
         text-align: left;
         padding: 5px;
-        color: #fff;
-        background: #ff523b;
+        background: lightgrey;
         font-weight: normal;
     }
 
-    td {
-        padding: 10px 5px;
+    .cart-info {
+        display: table-cell;
+
     }
 
-    td input {
-        width: 40px;
-        height: 30px;
+    .cart-info .cart_info_parts{
+        display: inline-flex;
+        font-size: min(max(12px, 4vw), 22px);
+        align-items: center;
+
+    }
+    .cart-info .cart_info_parts p{
+    }
+
+    .cart_table td {
+        padding: 10px 5px;
+        font-size: min(max(12px, 4vw), 22px);
+    }
+
+    .cart_table tr {
+        border-bottom: 5px solid lightgrey;
+    }
+
+    .cart_table tr:last-child {
+        border-bottom: 0;
+    }
+
+    .cart_table td input {
+        text-align: center;
+        width: 30px;
+        height: auto;
         padding: 5px;
         box-sizing: border-box;
+        font-size: min(max(14px, 4vw), 20px);
     }
 
-    td a {
-        color: #ff523b;
-        font-size: 12px;
-    }
 
-    td img {
+    .cart_table td img {
         width: 80px;
         height: 80px;
         margin-right: 5px;
@@ -310,19 +301,31 @@
     }
 
     .total-price table {
-        border-top: 3px solid #ff523b;
-        border-left: 3px solid #ff523b;
+        border-collapse: collapse;
+        border-top: 6px solid lightgrey;
+        border-left: 6px solid lightgrey;
+        border-bottom: 6px solid lightgrey;
+        background-color: white;
         width: 100%;
-        max-width: 450px;
+        max-width: 280px;
+        font-size: min(max(7px, 3vw), 12px);
     }
 
+    .total-price .price_label{
+        font-weight: bold;
+        font-size: min(max(15px, 4vw), 22px);
+    }
+    .total-price .price_amount{
+        font-weight: bold;
+        color: #4CAF50;
+        font-size: min(max(17px, 4vw), 24px);
+    }
 
     .payment {
-        background-color: #ddd;
+        background-color: #4CAF50;
         border: none;
-        color: black;
         right: 0;
-        position: marker;
+        /*position: marker;*/
         padding: 10px 20px;
         text-align: center;
         text-decoration: none;
@@ -331,73 +334,68 @@
         border-radius: 16px;
         margin-top: 15px;
         margin-bottom: 15px;
-        /*display: flex;*/
-        /*justify-content: flex-end;*/
+
+    }
+    .payment a, .payment a:link, .payment a:visited, .payment a:focus, .payment a:hover, .payment a:active{
+        color: black;
+        text-decoration:none;
+        cursor: crosshair;
+
+        display: flex;
+        justify-content: center;
+        font-weight: bolder;
+        font-size: 20px;
     }
 
 
-    .row {
+    .payment_page {
         display: -ms-flexbox; /* IE10 */
         display: flex;
         -ms-flex-wrap: wrap; /* IE10 */
         flex-wrap: wrap;
-        margin: 0 -16px;
+        margin: 0 16px;
         flex-direction: column-reverse;
     }
 
-    .col-25 {
+    .cart_items {
         -ms-flex: 25%; /* IE10 */
         flex: 25%;
         margin-bottom: 20px;
+        background-color: #f2f2f2;
+        /*padding: 5px 20px 15px 20px;*/
+        border: 1px solid lightgrey;
+        border-radius: 3px;
+        padding: 5px 20px 15px 20px;
     }
 
-    .col-50 {
-        -ms-flex: 50%; /* IE10 */
-        flex: 50%;
-    }
-
-    .col-75 {
-        -ms-flex: 75%; /* IE10 */
-        flex: 75%;
-    }
-
-    .col-25,
-    .col-50,
-    .col-75 {
-        padding: 0 16px;
-    }
-
-    .container {
+    .pay_info{
         background-color: #f2f2f2;
         padding: 5px 20px 15px 20px;
         border: 1px solid lightgrey;
         border-radius: 3px;
     }
 
-    input[type=text] {
+
+    .pay_info .container input {
         width: 100%;
         margin-bottom: 20px;
-        padding: 12px;
+        height: 25px;
         border: 1px solid #ccc;
         border-radius: 3px;
     }
 
-    label {
+    .pay_info label {
         margin-bottom: 10px;
         display: block;
     }
 
-    .icon-container {
-        margin-bottom: 20px;
-        padding: 7px 0;
-        font-size: 24px;
-    }
 
-    .btn {
+    .payment_page .btn {
         background-color: #4CAF50;
         color: white;
         padding: 12px;
-        margin: 10px 0;
+        margin-bottom: 80px;
+        margin-top: 10px;
         border: none;
         width: 100%;
         border-radius: 3px;
@@ -405,19 +403,11 @@
         font-size: 17px;
     }
 
-    .btn:hover {
+    .payment_page .btn:hover {
         background-color: #45a049;
     }
 
-    a {
-        color: #2196F3;
-    }
-
-    hr {
-        border: 1px solid lightgrey;
-    }
-
-    span.price {
+    .cart_items .price {
         float: right;
         color: grey;
     }
@@ -427,8 +417,9 @@
 
     body {
         max-width: 1200px;
-        margin: 0 auto;
-        min-height: 100%;
+        min-height: 1500px;
+        /*margin: 0 auto;*/
+        /*min-height: 100%;*/
         background-color: #FAF8FF;
         /*background-color: #0099D5;*/
     }
@@ -438,68 +429,40 @@
         display: grid;
         grid-template-columns: 380px;
         padding-top: 20px;
+        /*grid-template-columns: 15px auto;*/
         grid-template-areas:'logo hledat'
-                        'logo navigation';
+                        'logo nav';
         background-color: whitesmoke;
+        align-items: end;
 
     }
 
-    .toggle, [id=drop]{
+    .open_search, .search_panel{
         display: none;
-
-
     }
-    nav{
-        grid-area: navigation;
-        padding-top: 20px;
 
+    .search_panel_web{
+        display: block;
     }
+
+
+    .navigation{
+
+        visibility: visible;
+    }
+
     .navigation {
-        width: 100%;
-        grid-area: navigation;
-        display: grid;
-        grid-template-columns: auto auto auto;
         background-color: black;
         grid-gap: 2px;
-        height: 35px;
-        padding: 0;
     }
 
-
-    .navigation a{
-        display: flex;
-        background-color: #FFBD4F;
-        justify-content: center;
-        align-items: center;
-        text-decoration: none;
-        font-weight: bolder;
-        font-size: 20px;
-        color: black;
-
-    }
-    .navigation a:hover{
-        background-color: coral;
-    }
-
-    .navigation .actual{
-        background-color: coral;
-    }
 
     .logo {
         max-width: 380px;
+        min-height: 150px;
         grid-area: logo;
     }
 
-    main{
-        position: relative;
-        display: grid;
-        min-height: 100%;
-        grid-template-areas:
-            'ban'
-            'prod';
-        background-color: ghostwhite;
-
-    }
 
     .banner{
         display: block;
@@ -509,17 +472,6 @@
         height:auto;
     }
 
-
-
-    footer{
-        display: flex;
-        flex-flow: row;
-        justify-content: space-between;
-        background-color: #FFBD4F;
-        color: black;
-        padding: 10px;
-
-    }
 
 
 }

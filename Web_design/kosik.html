@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <title>e-shop</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="style.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 <header>
@@ -34,82 +34,66 @@
         <img class="banner" alt="banner" src="Images/banner.png">
     </div>
 
-    <div class="cart-page">
-    <table>
-        <tr>
-            <th>Produkt</th>
-            <th>Množství</th>
-            <th>Cena</th>
-        </tr>
-        <tr>
-            <td>
-                <div class="cart-info">
-                    <img src="Images/Product1.png">
-                    <div>
-                        <p>Depresivní pán</p>
-                        <small>Cena: 399 </small>
+    <div class="cart_page">
+        <table class="cart_table">
+            <tr>
+                <th>Produkt</th>
+                <th>Množství</th>
+                <th>Cena</th>
+            </tr>
+            <tr>
+                <td class="cart-info">
+                    <div class="cart_info_parts">
+                        <img src="Images/product1.png" alt="product1">
+                        <p>Produkt 1</p>
                     </div>
-                </div>
-            </td>
-            <td><input type="number" value="1"></td>
-            <td>399,-</td>
-        </tr>
-        <tr>
-            <td>
-                <div class="cart-info">
-                    <img src="Images/product3.png">
-                    <div>
-                        <p>Obamium</p>
-                        <small>Cena: 420 </small>
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>500,-</td>
+            </tr>
+            <tr>
+                <td class="cart-info">
+                    <div class="cart_info_parts">
+                        <img src="Images/product3.png" alt="product3">
+                        <p>Produkt 2</p>
                     </div>
-                </div>
-            </td>
-            <td><input type="number" value="1"></td>
-            <td>420,-</td>
-        </tr>
-        <tr>
-            <td>
-                <div class="cart-info">
-                    <img src="Images/product2.png">
-                    <div>
-                        <p>Zloba</p>
-                        <small>Cena: 399 </small>
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>500,-</td>
+            </tr>
+            <tr>
+                <td class="cart-info">
+                    <div class="cart_info_parts">
+                        <img src="Images/product2.png" alt="product2">
+                        <p>Produkt 3</p>
                     </div>
-                </div>
-            </td>
-            <td><input type="number" value="1"></td>
-            <td>399,-</td>
-        </tr>
-    </table>
-    </div>
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>500,-</td>
+            </tr>
+        </table>
 
-    <div class="total-price">
-    <table>
-        <tr>
-            <td>soucet bez dane</td>
-            <td>xxxxx</td>
-        </tr>
-        <tr>
-            <td>21%</td>
-            <td>xxxxx</td>
-        </tr>
-        <tr>
-            <td>cena celkem</td>
-            <td>xxxxx</td>
-        </tr>
-    </table>
-    </div>
+        <div class="total-price">
+            <table>
+                <tr>
+                    <td class="price_label">Celková cena</td>
+                    <td class="price_amount">27364,-</td>
+                </tr>
+                <tr>
+                    <td>Cena bez DPH</td>
+                    <td>xxxxx</td>
+                </tr>
+            </table>
+        </div>
 
-    <div class="payment">
-        <a href="pokladna.html">Zaplatit</a>
+        <div class="payment">
+            <a href="pokladna.html">Zaplatit</a>
+        </div>
     </div>
 
 </main>
 </body>
-<footer>
-    <p>Ricardo S.R.O.</p>
-    <p> Burian Hampapa</p>
-</footer>
+
 
 <script>
     function openNav() {
