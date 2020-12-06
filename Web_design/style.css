@@ -12,7 +12,7 @@
         top: 0;
         display: grid;
         grid-template-rows: auto auto;
-        background-color: snow;
+        background-color: rgba(42,158,245,0.84);
         grid-template-areas:'sea logo'
                 'nav nav';
         font-family: Arial, serif;
