@@ -392,15 +392,15 @@
 
     .payment_page .btn {
         background-color: #4CAF50;
-        color: white;
         padding: 12px;
+        font-weight: bold;
         margin-bottom: 80px;
         margin-top: 10px;
         border: none;
         width: 100%;
         border-radius: 3px;
         cursor: pointer;
-        font-size: 17px;
+        font-size: 20px;
     }
 
     .payment_page .btn:hover {
@@ -418,10 +418,7 @@
     body {
         max-width: 1200px;
         min-height: 1500px;
-        /*margin: 0 auto;*/
-        /*min-height: 100%;*/
         background-color: #FAF8FF;
-        /*background-color: #0099D5;*/
     }
 
     header {
@@ -429,7 +426,6 @@
         display: grid;
         grid-template-columns: 380px;
         padding-top: 20px;
-        /*grid-template-columns: 15px auto;*/
         grid-template-areas:'logo hledat'
                         'logo nav';
         background-color: whitesmoke;
@@ -463,12 +459,33 @@
         grid-area: logo;
     }
 
+    .product_detail {
+        display: grid;
+        grid-template-areas: 'Pimg Pcnfg';
+        grid-template-columns: max-content;
+        background-color: unset;
+
+    }
+
+    .product_detail .proImg {
+        background-color: white;
+        grid-area: Pimg;
+        margin: 0;
+    }
+
+    .product_config{
+        grid-area: Pcnfg;
+        margin-bottom: 10px;
+    }
+
+    .price_container{
+        padding-right: 40px;
+    }
 
     .banner{
         display: block;
         min-width: 100%;
         max-width:100%;
-        /*grid-area: auto;*/
         height:auto;
     }
 
